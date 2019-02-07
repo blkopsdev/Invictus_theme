@@ -1,15 +1,9 @@
+
 <?php
-/**
- * The template for displaying custom width blog
- *
- * Learn more: http://codex.wordpress.org/Template_Hierarchy
- *
- * @package Insignia Themes
- * @subpackage Insignia 
- * @since Insignia 0.1
+/*
+ * Template Name: Featured Article
+ * Template Post Type: post, page, product
  */
-?>
-<?php
 global $ins_opt;
 ?>
 <?php if ( have_posts() ) : ?>

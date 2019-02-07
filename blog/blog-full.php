@@ -1,11 +1,20 @@
 <?php
-/*
- * Template Name: Featured Article
- * Template Post Type: post, page, product
+/**
+ * The template for displaying Full width blog
+ *
+ * Learn more: http://codex.wordpress.org/Template_Hierarchy
+ *
+ * @package Insignia Themes
+ * @subpackage Insignia 
+ * @since Insignia 0.1
  */
+?>
+<?php
 global $ins_opt;
-if ( have_posts() ) : 
-	 while ( have_posts() ) : the_post(); 
+?>
+	<?php if ( have_posts() ) : ?>
+		<?php while ( have_posts() ) : the_post(); ?>
+<?php
 if (has_post_format('gallery', $post->ID)) {
 	$main_class = 'blog-gallary-page';
 	$img_class = 'blog-gallery-box';
@@ -17,16 +26,21 @@ elseif (has_post_format('video', $post->ID) || has_post_format('audio', $post->I
 	$main_class = 'blog-page';
 	$img_class = '';
 }
+?>
+
+<?php 
 $archive_year  = get_the_time('Y'); 
 $archive_month = get_the_time('m'); 
 $archive_day   = get_the_time('d'); 
-if ( has_post_thumbnail($post->ID) ) { 
-	$single_blog_bg =   'style="background-image: url('.get_the_post_thumbnail_url().');"'; 
-
-}else{
-	$single_blog_bg =   ''; 
-}  
 ?>
+
+
+ <?php if ( has_post_thumbnail($post->ID) ) { 
+              $single_blog_bg =   'style="background-image: url('.get_the_post_thumbnail_url().');"'; 
+
+ }else{
+              $single_blog_bg =   ''; 
+}  ?>
 
 <div class="inv-single-blog-title-wrapper text-center">
 <div class="inv-single-blog-title-bg" <?php echo wp_kses_post($single_blog_bg); ?>></div>
