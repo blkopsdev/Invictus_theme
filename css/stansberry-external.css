@@ -1,0 +1,350 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body{border:0;margin:0;  -webkit-font-smoothing: antialiased;}
+.top-header{
+	position: relative; /*z-index will not work without position declaration*/
+	width: 100%;
+	height: 60px;
+	background-color: #929497;
+	z-index: 3;
+	-webkit-box-shadow: 0px 2px 2px 0px rgba(50, 50, 50, 0.3) !important;
+	-moz-box-shadow: 0px 2px 2px 0px rgba(50, 50, 50, 0.3) !important;
+	box-shadow: 0px 2px 2px 0px rgba(50, 50, 50, 0.3) !important;}
+
+.top-header-order{
+	width: 100%;
+	height: 40px;
+	background-color: #929497;
+	z-index: 3 !important;
+	-webkit-box-shadow: 0px 2px 2px 0px rgba(50, 50, 50, 0.3) !important;
+    -moz-box-shadow: 0px 2px 2px 0px rgba(50, 50, 50, 0.3) !important;
+    box-shadow: 0px 2px 2px 0px rgba(50, 50, 50, 0.3) !important;
+	}
+
+/*.top-header-order p{padding-top:7px;}*/
+
+.top-header-font{font-family: 'Montserrat', sans-serif;color:#FFFFFF;font-size:16px;margin:0; padding-top:7px;}
+
+.main-middle{
+width:100%; max-width:970px;
+background-color:#FFF;
+margin:0 auto;
+min-height:900px;
+padding-top:30px;
+padding-bottom:20px;
+z-index: 2 !important;
+-webkit-box-shadow: 0px 1px 1px 1px rgba(179,179,179,1);
+-moz-box-shadow: 0px 1px 1px 1px rgba(179,179,179,1);
+box-shadow: 0px 1px 1px 1px rgba(179,179,179,1);}
+
+.main-middle-text {
+padding-right:140px;
+padding-left:140px;}
+
+.liststyle-clear
+{list-style-type: none;
+padding: 0;
+margin-left: 60px;}
+.checkmark2
+{background-image: url('https://static.cloudsna.com/store/PROD/images/Elements/BlackCheckMark-Med.gif');
+background-repeat: no-repeat;
+padding-left: 30px;}
+.checkmark2-blue
+{background-image: url('https://static.cloudsna.com/store/PROD/images/Elements/blue-outline-arrow-2.png');
+background-repeat: no-repeat;
+background-position-y: 1px;
+padding-left: 32px;}
+.indent{margin-left:40px;}
+.monospace{text-align:left;font: normal 17px/27px 'Courier New', monospace !important; color:#222222;}
+.blue-quote{font: bold 22px/28px 'PT Serif', serif; color:#00559f;text-align:center;margin: 30px 0 30px 0;}
+.grey-quote{font: normal 19px/27px 'PT Serif', serif; color:#FFFFFF !important;background-color:#6d6e70;padding:10px 20px 10px 20px;}
+.signature{text-align:left;margin:0; font: bold 16px/22px 'Montserrat', sans-serif;color:#222222;}
+.date{text-align:left;margin:0; font: normal 16px/22px 'Montserrat', sans-serif;color:#222222;}
+.macyList{margin-left:50px;}
+.superhead{font: normal 17px/27px 'Montserrat', sans-serif;padding-bottom:20px;}
+.blue-bold-header{ 
+background-color:#003766;
+font: bold 36px/46px 'Montserrat', sans-serif;
+color:#FFFFFF;
+position: relative;
+width:100%;
+padding: 15px 0px 15px 0px;
+background: #003766;
+text-align:center;
+margin-top: 50px;
+margin-bottom:50px;}
+.grey-bold-header{ font: normal 26px/32px 'PT Serif', serif;color:#FFFFFF;
+width:70%;
+padding: 15px 15px 15px 15px;
+background: #6d6e70;
+text-align:left;
+margin: 40px 0 40px 0;}
+.quote-wrapper{width:100%;}
+.blockquote{
+	font-family: 'Noto Serif', serif;
+	font-weight:400;
+	font-size:18px;
+	text-align: left;
+	line-height: 160% !important;
+	padding-left:25px;
+	padding-top:15px;
+	padding-bottom:20px;
+}
+.blockquote-box{border-left:3px solid #1e80ad; margin:auto; margin-bottom: 20px;padding-left: 10px;}
+
+article {background-color:#f8f8f8;margin:auto;z-index:1;
+background-repeat:no-repeat;
+background-attachment:fixed;
+background-position: -150px 0;}
+
+.bottom-footer{width:100%;height:100px;background-color:#6d6e70;margin:0;z-index:2;}
+.bottom-footer p{font-family: 'Montserrat', sans-serif;font-size:11px;color:#FFF;margin:0;}
+
+
+.clearfix:after {
+clear:both;
+content:".";
+display:block;
+height:0;
+line-height:0;
+visibility:hidden;}
+
+.img-side{float:right;width:40%;}
+
+/* Testimonials */
+.testimonial {
+margin: 3vh;
+text-align: left;
+border: 1px solid #ebeae8;
+border-bottom: 3px solid #ebeae8;
+padding: 1vh 1vw;
+background: url('https://static.cloudsna.com/store/PROD/images/exclusive_paper.png');
+}
+
+.testimonial p{
+font: 21px/32px  'Noto Serif',serif;
+font-style: italic;
+margin: 1vh;
+line-height: 130%;
+}
+.testimonial p.source {
+text-align: right;
+font-size: 18px;}
+
+/*misc styles*/
+hr.style-lightgrey {
+border: 0;
+height: 0;
+border-top: 1px solid rgba(0, 0, 0, 0.1);
+border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+text-align:left;}
+.text-left{text-align:left;} /*because salesforce*/
+.disclosures{font:normal 11px/18px 'Montserrat', sans-serif;color:#6d6e70;text-align:left;}
+.researchReport{font-family: 'Montserrat', sans-serif !important; font-weight:400; font-size:20px;color:#222222; text-align:left; margin-top: 85px;}
+.researchReportBlue{font-family: 'PT Serif', serif !important; font-weight:700; font-size:26px; color:#00559f;text-align:left; line-height: 120%;}
+.redList{font-family: 'PT Serif', serif;font-size:19px;line-hieght:27px;font-weight:bold;color:#cb0303;}
+.research-report-image{
+	float: center;
+	padding-top: 10px;
+	text-align:center;
+}
+
+/* button order now link styling */
+a.orderNow:link {
+font:bold 32px 'Montserrat', sans-serif;
+color:#FFFFFF;
+background-color:#cb0303;
+text-decoration: none;
+padding: 15px 80px 15px 80px;
+border-bottom: 4px solid #880202 !important;
+border-bottom-width: 4px;
+border-bottom-style: solid;
+border-bottom-color: #880202;}
+a.orderNow:hover {color:#FFFFFF;
+text-decoration: underline;
+background-color:#a90202;
+border-bottom: 4px solid #a90202;}
+a.orderNow:active {color:#FFFFFF;
+text-decoration: underline;
+background-color:#880202;
+border-bottom: 4px solid #880202;}
+a.orderNow:visited {
+color:#FFFFFF;
+border-radius:3px;
+-webkit-border-radius: 3px;
+-moz-border-radius: 3px; 
+background-color:#e30000;
+} 
+/* Porter sig */
+.PorterHeadline{
+color:#003766;
+font:bold 14px 'Montserrat', sans-serif;}
+.PorterIcon{
+background-color: #00559f;
+width:15px;
+color:#a7a8a9;
+font:regular 14px 'Montserrat', sans-serif;
+}
+
+
+/* Eifrig button order now link styling */
+a.EifrigorderNow:link {
+font:bold 32px 'Montserrat', sans-serif;color:#FFFFFF;
+background-color:#4f8e3c;
+text-decoration: none;
+padding: 15px 80px 15px 80px;
+border-bottom: 4px solid #174613;} 
+a.EifrigorderNow:hover {color:#FFFFFF;
+text-decoration: underline;
+background-color:#3b6a2d;
+border-bottom: 4px solid #174613;}
+a.EifrigorderNow:active {color:#FFFFFF;
+text-decoration: underline;
+background-color:#880202;
+border-bottom: 4px solid #174613;}
+.EifrigHeadline{
+color:#174613;
+font:bold 14px 'Montserrat', sans-serif;}
+.EifrigIcon{
+background-color: #4f8e3c;
+width:15px;
+color:#a7a8a9;
+font:regular 14px 'Montserrat', sans-serif;
+}
+
+/* Sjuggerud button order now link styling */
+a.SjuggerudorderNow:link {
+font:bold 32px 'Montserrat', sans-serif;color:#FFFFFF;
+background-color:#199cdd;
+text-decoration: none;
+padding: 15px 80px 15px 80px;
+border-bottom: 4px solid #0070a8;} 
+a.SjuggerudorderNow:hover {color:#FFFFFF;
+text-decoration: underline;
+background-color:#0087ca;
+border-bottom: 4px solid #0070a8;}
+a.SjuggerudorderNow:active {color:#FFFFFF;
+text-decoration: underline;
+background-color:#0070a8;
+border-bottom: 4px solid #0070a8;}
+.SjuggerudHeadline{
+color:#0070a8;
+font:bold 14px 'Montserrat', sans-serif;}
+.SjuggerudIcon{
+background-color: #199cdd;
+width:15px;
+color:#a7a8a9;
+font:regular 14px 'Montserrat', sans-serif;}
+
+/* Badiali button order now link styling */
+a.BadialiorderNow:link {
+font:bold 32px 'Montserrat', sans-serif;color:#FFFFFF;
+background-color:#a22c22;
+text-decoration: none;
+padding: 15px 80px 15px 80px;
+border-bottom: 4px solid #6a1d16;} 
+a.BadialiorderNow:hover {color:#FFFFFF;
+text-decoration: underline;
+background-color:#86241c;
+border-bottom: 4px solid #6a1d16;}
+a.BadialiorderNow:active {color:#FFFFFF;
+text-decoration: underline;
+background-color:#6a1d16;
+border-bottom: 4px solid #6a1d16;}
+
+.BadialiHeadline{
+color:#6a1d16;
+font:bold 14px 'Montserrat', sans-serif;}
+
+.BadialiIcon{
+background-color: #a22c22;
+width:15px;
+color:#a7a8a9;
+font:regular 14px 'Montserrat', sans-serif;}
+
+/* Clark button order now link styling */
+a.ClarkorderNow:link {
+font:bold 32px 'Montserrat', sans-serif;color:#FFFFFF;
+background-color:#ea800b;
+text-decoration: none;
+padding: 15px 80px 15px 80px;
+border-bottom: 4px solid #a95d08;} 
+a.ClarkorderNow:hover {color:#FFFFFF;
+text-decoration: underline;
+background-color:#ca6f09;
+border-bottom: 4px solid #a95d08;}
+a.ClarkorderNow:active {color:#FFFFFF;
+text-decoration: underline;
+background-color:#a95d08;
+border-bottom: 4px solid #a95d08;}
+
+.ClarkHeadline{
+color:#49280e;
+font:bold 14px 'Montserrat', sans-serif;}
+.ClarkIcon{
+background-color: #ea800b;
+width:15px;
+color:#a7a8a9;
+font:regular 14px 'Montserrat', sans-serif;}
+
+/* disclosures link styling */
+a.disclosures:link {
+font:normal 11px/18px 'Montserrat', sans-serif;color:#006bb5;
+text-decoration: none;}
+a.disclosures:hover {
+text-decoration: underline;}
+a.disclosures:active {
+text-decoration: underline;}
+.center-div{text-align:center;margin:0 auto;}
+
+	
+
+@media (max-width: 500px){
+.main-middle-text{width:90%;padding-right: 10px !important;padding-left: 10px !important;}
+.main-middle h1 {font: bold 30px/40px 'Montserrat', sans-serif;}
+.grey-quote{float: none !important;
+    width: 100% !important;
+	margin-bottom:20px;}
+.img-side{float: none !important;
+    width: 100% !important;}
+.macyList{margin-left:20px;}
+.liststyle-clear{margin-left: 30px;}
+a.orderNow:link {
+ font: bold 22px 'Montserrat', sans-serif !important;
+padding: 15px 30px !important;}
+
+
+a.EifrigorderNow:link {
+font: bold 22px 'Montserrat', sans-serif;}
+
+a.SjuggerudorderNow:link {font: bold 22px 'Montserrat', sans-serif; padding: 15px 20px 15px 20px !important;}
+
+a.BadialiorderNow:link {font: bold 22px 'Montserrat', sans-serif !important; padding: 15px 20px 15px 20px !important;}
+
+a.ClarkorderNow:link {font: bold 22px 'Montserrat', sans-serif; padding: 15px 20px 15px 20px !important;}
+
+	
+	a.EifrigorderNow:visited {
+font: bold 22px 'Montserrat', sans-serif;}
+
+a.SjuggerudorderNow:visited {font: bold 22px 'Montserrat', sans-serif; padding: 15px 20px 15px 20px !important;}
+
+a.BadialiorderNow:visited {font: bold 22px 'Montserrat', sans-serif !important; padding: 15px 20px 15px 20px !important;}
+
+a.ClarkorderNow:visited {font: bold 22px 'Montserrat', sans-serif; padding: 15px 20px 15px 20px !important;}
+
+.main-middle-text1 {padding-right:50px;
+padding-left:50px;
+}
+
+	#sna_rateplan > label {
+font-family: 'Roboto', Arial, sans-serif;
+font-size: 18px !important;
+color: #111;
+}
+#sna_rateplan {
+ margin: 0px 0px 0px 0px !important;
+}
+
+}
