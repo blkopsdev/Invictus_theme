@@ -229,6 +229,19 @@ $args=array(
 );
 $my_query = new WP_Query($args);
 if( $my_query->have_posts() ) { ?>
+<section class="related">
+  <h3 class="home-header">Recent Articles</h3>
+  <div class="row">
+    <div class="col-md-12">
+      <?php echo wp_kses_post($prev); ?>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-12">
+      <?php echo wp_kses_post($next); ?>
+    </div>
+  </div>
+</section>
             <div class="blog-related-post-wrapper col-lg-12 col-md-12 col-sm-12 col-xs-12">
                 <div class="inv-related-post-title-wrapper">
                     <h3 class="inv-related-post-title">
@@ -237,8 +250,7 @@ if( $my_query->have_posts() ) { ?>
                 </div>
                 <div class="inv-blog-element-grid-wrapper inv-blog-element-article-holder" style="margin: 0 -15px;">
                     <div class="grid-sizer"></div>
-                    <?php 
-while ($my_query->have_posts()) : $my_query->the_post(); ?>
+                    <?php while ($my_query->have_posts()) : $my_query->the_post(); ?>
 
                     <article style="padding: 0 15px; margin-bottom:15px;" class="inv-post-grid-one-main-wrapper col-md-4 col-lg-4 col-sm-6 col-xs-12 inv-post_layout_1 inv-post-blog-item-holder">
                         <div class="inv-post-grid-one-inner" <?php post_class();?>>
@@ -285,8 +297,7 @@ if(!empty($prev) || !empty($next)){ ?>
                     <li class="col-md-5">
                         <?php echo wp_kses_post($prev); ?>
                     </li>
-                    <li class="col-md-2 text-center post-nav-grid-wrapper"><a href="<?php echo insignia_get_post_page_url(); ?>"><span
-                                class="ti-layout-grid2 post-nav-grid-icon"></span></a></li>
+                    
                     <li class="col-md-5">
                         <?php echo wp_kses_post($next); ?>
                     </li>
