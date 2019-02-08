@@ -1,4 +1,4 @@
-<div class="blog-content-box-wrapper">	
+<div class="blog-content-box-wrapper col-md-8">	
 <div class="blog-meta-info">
 		<div class="blog-meta-info-inner">
 			<span><?php echo esc_html_e('Posted on','invictus'); ?></span> 

@@ -1,26 +1,6 @@
 <?php get_header(); ?>
 <section id="content" role="main">
-	<header class="header">
-		<div class="archive-blog-main-header-wrapper">
-			<div class="archive-blog-header">
-
-			</div>
-			<div class="archive-blog-banner">
-			<h3 class="archive-blog-title"><?php echo esc_html(single_cat_title()); ?></h3>
-			<?php
-			global $ins_opt;
-			$bread = $ins_opt['ins-opt-archive-blog-breadcrumbs'];
-			if($bread == 1){
-			 if (function_exists('insignia_breadcrumbs')) insignia_breadcrumbs(); } ?>
-			</div>
-		</div>
-	</header>
-<?php if ( is_active_sidebar( 'sidebar-4' ) ){ 
-$archive_siderbar_class = 'col-md-9 col-sm-12';
-}else{
-$archive_siderbar_class = 'col-md-12 col-sm-12';
-} ?>
-
+	
 	<div class="blog-main-archive">
 	<div class="container">
 
@@ -48,7 +28,7 @@ $archive_siderbar_class = 'col-md-12 col-sm-12';
 	<?php
 	if ( ! get_post_format() ) { 
 	if ( has_post_thumbnail($post) ) { ?>
-        <div class=" clearfix archive-featured-image">
+        <div class=" clearfix archive-featured-image col-md-4">
             <div class="inv-default-img-hover-wrapper inv-inline-block">
 <a rel="<?php echo esc_html($post->ID);?>" href="<?php echo esc_url(the_post_thumbnail_url('full'));?>" class="inv-popup-gallery">
                 <?php echo the_post_thumbnail('full'); ?>
