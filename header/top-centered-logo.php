@@ -37,8 +37,8 @@ $fixer_height = $bottom_menu_height + $top_menu_height ;
 
 </div>
 
-	<div class="header-top-menu-right inv-main-header-right desktop-menu text-center col-md-12 col-lg-12" style="height: <?php echo esc_attr($bottom_menu_height); ?>px; line-height: <?php echo esc_attr($bottom_menu_height); ?>px; padding: 5px 0;">
-		<img src="http://159.65.162.144/wp-content/uploads/2019/02/LogoMakr_8RTMJq-2.png" alt="Logo" class="inv-main-header-logo-img inv-header-logo-img" style="height: 50px;">
+	<div class="header-top-menu-right header-sticky-logo inv-main-header-right desktop-menu text-center col-md-12 col-lg-12" style="height:70px; line-height: 60px; padding: 5px 0; display: none;">
+		<img src="http://159.65.162.144/wp-content/uploads/2019/02/LogoMakr_8RTMJq-2.png" alt="Logo" class="inv-header-logo-img" style="height: 50px;">
 	</div>
 
 
