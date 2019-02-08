@@ -106,17 +106,7 @@ elseif (has_post_format('gallery', $post->ID)) {
                     <div class="after_content">
                         <?php wp_link_pages(); ?>
                     </div>
-                    <?php
-$posttags = get_the_tags();
-if ($posttags) { ?>
-                    <ul class="tags-single-post clearfix">
-                        <?php foreach($posttags as $tag) { ?>
-                        <li><a href="<?php echo esc_url(get_tag_link($tag->term_id)); ?>">
-                                <?php echo esc_html($tag->name); ?></a></li>
-                        <?php }
-echo '</ul>';
-}
-?>
+                    
                 </div>
             </div>
             <?php
@@ -235,6 +225,9 @@ if(!empty($prev) || !empty($next)){ ?>
       
 <?php endwhile; ?>
 <?php endif; ?>
+</article>
+</div>
+</div>
 <?php
 get_footer();
 ?>
