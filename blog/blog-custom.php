@@ -214,8 +214,19 @@ $nextThumbnail = get_the_post_thumbnail( $nextPost->ID, array(150,150) );
         <div class="multi-lines_lines">&nbsp;</div>
         <div class="multi-lines_lines">&nbsp;</div>
       </div>
-
-            <?php
+<section class="related">
+  <h3 class="home-header">Recent Articles</h3>
+  <div class="row">
+    <div class="col-md-12">
+      <?php echo wp_kses_post($prev); ?>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-12">
+      <?php echo wp_kses_post($next); ?>
+    </div>
+  </div>
+</section>            <?php
 
 $tags = wp_get_post_tags($post->ID);
 
@@ -229,19 +240,7 @@ $args=array(
 );
 $my_query = new WP_Query($args);
 if( $my_query->have_posts() ) { ?>
-<section class="related">
-  <h3 class="home-header">Recent Articles</h3>
-  <div class="row">
-    <div class="col-md-12">
-      <?php echo wp_kses_post($prev); ?>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-md-12">
-      <?php echo wp_kses_post($next); ?>
-    </div>
-  </div>
-</section>
+
             <div class="blog-related-post-wrapper col-lg-12 col-md-12 col-sm-12 col-xs-12">
                 <div class="inv-related-post-title-wrapper">
                     <h3 class="inv-related-post-title">
