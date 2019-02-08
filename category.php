@@ -20,7 +20,7 @@
 		}
 		?>
 
-	<div <?php post_class('col-lg-12 col-md-12 col-sm-12 col-xs-12 post-list-inner-wrapper');?>>
+	<div <?php post_class('col-lg-12 col-md-12 col-sm-12 col-xs-12 post-list-inner-wrapper');?> style="margin-bottom: 20px;">
 
 <?php $quote_bg = get_post_meta(get_the_ID(), "_ins_quote_background_color", true ); ?>
 	<div <?php if(has_post_format('quote', $post->ID)){ ?> style='background-color:<?php echo esc_html($quote_bg);?>' <?php }?> class="<?php echo esc_attr($img_class); ?> blog-archive-inner-box-wrapper">
@@ -28,7 +28,7 @@
 	<?php
 	if ( ! get_post_format() ) { 
 	if ( has_post_thumbnail($post) ) { ?>
-        <div class=" clearfix archive-featured-image col-md-4">
+        <div class=" clearfix archive-featured-image col-md-4" style="padding-top: 30px;">
             <div class="inv-default-img-hover-wrapper inv-inline-block">
 <a rel="<?php echo esc_html($post->ID);?>" href="<?php echo esc_url(the_post_thumbnail_url('full'));?>" class="inv-popup-gallery">
                 <?php echo the_post_thumbnail('full'); ?>
@@ -74,14 +74,7 @@ if (function_exists("insignia_pagination")) {
     insignia_pagination();
 } ?>
 	</article>
-<?php if ( is_active_sidebar( 'sidebar-4' ) ) : ?>
-		<div class="col-md-3 col-lg-3 col-sm-12  blog-widget-area">
-		
-			<div id="secondary" class="widget-area" role="complementary">
-			<?php dynamic_sidebar( 'sidebar-4' ); ?>
-			</div>
-</div>
-		<?php endif; ?>
+
 		
 
 
@@ -91,6 +84,5 @@ if (function_exists("insignia_pagination")) {
 </section>
 
 
-<?php get_sidebar(); ?>
 <?php get_footer(); ?>
 
