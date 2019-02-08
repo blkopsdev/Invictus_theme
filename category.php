@@ -20,6 +20,8 @@
 		}
 		?>
 
+  <h3 class="home-header">Recent Articles</h3>
+  
 	<div <?php post_class('col-lg-12 col-md-12 col-sm-12 col-xs-12 post-list-inner-wrapper');?> style="margin-bottom: 20px;">
 
 <?php $quote_bg = get_post_meta(get_the_ID(), "_ins_quote_background_color", true ); ?>
