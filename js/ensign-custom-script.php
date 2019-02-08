@@ -72,11 +72,11 @@ else{
 jQuery(window).scroll(function() {
         if (jQuery(window).width() >= <?php echo esc_js($break_point); ?> ) { 
 if (jQuery(this).scrollTop() > 100){  
-    jQuery('.inv-main-header-wrapper').addClass("fixed-menu");
+    jQuery('.inv-main-header-wrapper').hide();
   }
   
   else{
-    jQuery('.inv-main-header-wrapper').removeClass("fixed-menu");
+    jQuery('.inv-main-header-wrapper').show();
   }
 }
 

@@ -30,7 +30,7 @@ $fixer_height = $bottom_menu_height + $top_menu_height ;
 	<div class="row">
 	<div class="inv-header-inner">
 
-	<div class="inv-header-logo-holder text-center col-md-12 col-lg-12" style="height: <?php echo esc_attr($top_menu_height); ?>px; line-height: <?php echo esc_attr($top_menu_height); ?>px;">
+	<div class="inv-header-logo-holder text-center col-md-12 col-lg-12" style="height: 70px; line-height: <?php echo esc_attr($top_menu_height); ?>px;">
 		<div class="inv-logo-wrap">
  			<?php do_action( 'insignia_branding_header' ); ?>
 		</div>
