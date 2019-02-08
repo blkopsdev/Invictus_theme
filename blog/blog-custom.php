@@ -9,9 +9,10 @@
  * @subpackage Insignia 
  * @since Insignia 0.1
  */
-?>
-<?php
+
+get_header();
 global $ins_opt;
+
 ?>
 <?php if ( have_posts() ) : ?>
 <?php while ( have_posts() ) : the_post(); ?>
