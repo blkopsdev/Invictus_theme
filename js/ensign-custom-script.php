@@ -73,10 +73,13 @@ jQuery(window).scroll(function() {
         if (jQuery(window).width() >= <?php echo esc_js($break_point); ?> ) { 
 if (jQuery(this).scrollTop() > 100){  
     jQuery('.inv-main-header-wrapper').hide();
+    jQuery('.header-sticky-logo').show();
   }
   
   else{
     jQuery('.inv-main-header-wrapper').show();
+    jQuery('.header-sticky-logo').hide();
+
   }
 }
 
