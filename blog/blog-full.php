@@ -132,6 +132,10 @@ $authordesc = get_the_author_meta( 'description' );
 if ( ! empty ( $authordesc ) )
 {
 ?>
+<section class="related">
+  <h3 class="home-header">Recent Articles</h3>
+  
+</section>
 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 admin-box single-post-admin-box-wrapper">
 <div class="admin-img-box"><?php echo get_avatar( get_the_author_meta( 'ID' )); ?></div>
 <div class="admin-text-box">
