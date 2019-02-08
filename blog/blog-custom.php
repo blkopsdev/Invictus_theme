@@ -216,6 +216,9 @@ $nextThumbnail = get_the_post_thumbnail( $nextPost->ID, array(150,150) );
       </div>
 <section class="related">
   <h3 class="home-header">Recent Articles</h3>
+  <?php 
+if(!empty($prev) || !empty($next)){ ?>
+
   <div class="row">
     <div class="col-md-12">
       <?php echo wp_kses_post($prev); ?>
@@ -226,86 +229,12 @@ $nextThumbnail = get_the_post_thumbnail( $nextPost->ID, array(150,150) );
       <?php echo wp_kses_post($next); ?>
     </div>
   </div>
-</section>            <?php
+   <?php } ?>
+</section>  
 
-$tags = wp_get_post_tags($post->ID);
-
-if ($tags) { 
-$first_tag = $tags[0]->term_id;
-$args=array(
-'tag__in' => array($first_tag),
-'post__not_in' => array($post->ID),
-'posts_per_page'=>3,
-'ignore_sticky_posts'=>1
-);
-$my_query = new WP_Query($args);
-if( $my_query->have_posts() ) { ?>
-
-            <div class="blog-related-post-wrapper col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                <div class="inv-related-post-title-wrapper">
-                    <h3 class="inv-related-post-title">
-                        <?php echo esc_html_e('Related Posts','invictus'); ?>
-                    </h3>
-                </div>
-                <div class="inv-blog-element-grid-wrapper inv-blog-element-article-holder" style="margin: 0 -15px;">
-                    <div class="grid-sizer"></div>
-                    <?php while ($my_query->have_posts()) : $my_query->the_post(); ?>
-
-                    <article style="padding: 0 15px; margin-bottom:15px;" class="inv-post-grid-one-main-wrapper col-md-4 col-lg-4 col-sm-6 col-xs-12 inv-post_layout_1 inv-post-blog-item-holder">
-                        <div class="inv-post-grid-one-inner" <?php post_class();?>>
-
-                            <?php if ( has_post_thumbnail($post) ) { ?>
-                            <div class="thumbnail-image entry-thumb-wrap" style="background-image: url('<?php echo esc_url(get_the_post_thumbnail_url($post->ID)); ?>');">
-                                <!--post-image-->
-                            </div>
-                            <?php } ?>
-
-                            <div class="inv-post-grid-one-content-wrap">
-                                <div class="title entry-post-title inv-post-grid-one-title"><a href="<?php echo esc_url(get_permalink()); ?>"
-                                        class="inv-title-h5">
-                                        <?php the_title(); ?></a></div>
-                                <div class="entry-excerpt inv-post-grid-one-excerpt">
-                                    <?php the_excerpt(); ?>
-                                </div>
-                                <div class="inv-post-grid-one-meta">
-                                    <div class="inv-post-grid-one-date"><i class="ti-alarm-clock inv-post-grid-one-icon">
-                                            <!--icon--></i> <span>
-                                            <?php echo get_the_date('d M Y'); ?></span></div>
-                                    <div class="inv-post-grid-one-author"><i class="ti-user inv-post-grid-one-icon">
-                                            <!--icon--></i><span class="inv-post-grid-one-author-text">
-                                            <?php the_author_posts_link(); ?></span></div>
-                                </div>
-                            </div>
-                        </div>
-                    </article>
-
-                    <?php
-endwhile; ?>
-                </div>
-            </div>
-            <?php }
-wp_reset_query(); 
-} ?>
-
-
-
-            <?php 
-if(!empty($prev) || !empty($next)){ ?>
-            <nav class="navigation post-nav " role="navigation">
-                <ul class="post-nav-lst clearfix">
-                    <li class="col-md-5">
-                        <?php echo wp_kses_post($prev); ?>
-                    </li>
-                    
-                    <li class="col-md-5">
-                        <?php echo wp_kses_post($next); ?>
-                    </li>
-                </ul>
-            </nav>
-            <?php } ?>
-
-        </article>
-    </div>
-</div>
+      
 <?php endwhile; ?>
 <?php endif; ?>
+<?php
+get_footer();
+?>
