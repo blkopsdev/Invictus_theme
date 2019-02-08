@@ -3,7 +3,7 @@
 	
 	<div class="blog-main-archive">
 	<div class="container">
-
+	<h3 class="home-header">Recent Articles</h3>	
 	<?php if ( have_posts() ) : ?>
 		<?php /* Start the Loop */ ?>
 		<article class="blog-page <?php echo esc_attr($archive_siderbar_class); ?>">
@@ -20,7 +20,7 @@
 		}
 		?>
 
-  <h3 class="home-header">Recent Articles</h3>
+  
   
 	<div <?php post_class('col-lg-12 col-md-12 col-sm-12 col-xs-12 post-list-inner-wrapper');?> style="margin-bottom: 20px;">
 
