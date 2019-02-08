@@ -38,12 +38,7 @@ $fixer_height = $bottom_menu_height + $top_menu_height ;
 </div>
 
 	<div class="header-top-menu-right inv-main-header-right desktop-menu text-center col-md-12 col-lg-12" style="height: <?php echo esc_attr($bottom_menu_height); ?>px; line-height: <?php echo esc_attr($bottom_menu_height); ?>px;">
-		<?php
-if (has_nav_menu('primary-menu')){
- wp_nav_menu( array( 'theme_location' => 'primary-menu' , 'menu_id'=> 'primary_menu') );
-} else {
-echo '<div class="no-menu-assigned">' . esc_html__('Assign a menu', 'invictus') . '</div>';
-} ?>
+		<img src="http://159.65.162.144/wp-content/uploads/2019/02/LogoMakr_8RTMJq-2.png" alt="Logo" class="inv-main-header-logo-img inv-header-logo-img">
 	</div>
 
 
