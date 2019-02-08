@@ -49,7 +49,7 @@ $archive_day   = get_the_time('d');
     <div class="inv-single-blog-title-bg-overlay"></div>
     <div class="inv-single-blog-under-header-wrapper" style="height: 80px;"></div>
     <div class="inv-single-blog-title-inner">
-        <div class="container">
+        <div class="container custom-blog-title">
             <div class="inv-single-blog-category-row">
                 <div class="inv-single-blog-subtitle">
                     <?php the_category(', '); ?>
