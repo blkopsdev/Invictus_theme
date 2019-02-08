@@ -209,7 +209,11 @@ $nextThumbnail = get_the_post_thumbnail( $nextPost->ID, array(150,150) );
 ?>
 
 
-
+      <div class="multi-lines">
+        <div class="multi-lines_lines">&nbsp;</div>
+        <div class="multi-lines_lines">&nbsp;</div>
+        <div class="multi-lines_lines">&nbsp;</div>
+      </div>
 
             <?php
 
