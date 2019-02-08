@@ -30,7 +30,7 @@
 	<?php
 	if ( ! get_post_format() ) { 
 	if ( has_post_thumbnail($post) ) { ?>
-        <div class=" clearfix archive-featured-image col-md-4" style="padding-top: 30px;">
+        <div class=" clearfix archive-featured-image col-md-4" style="padding-top: 10px;">
             <div class="inv-default-img-hover-wrapper inv-inline-block">
 <a rel="<?php echo esc_html($post->ID);?>" href="<?php echo esc_url(the_post_thumbnail_url('full'));?>" class="inv-popup-gallery">
                 <?php echo the_post_thumbnail('full'); ?>
