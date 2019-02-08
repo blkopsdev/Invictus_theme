@@ -63,18 +63,16 @@ $archive_day   = get_the_time('d');
             </div>
 
             <div class="inv-single-blog-meta-row">
-                <div class="inv-single-blog-date inv-single-blog-meta-text">
-                    <time datetime="2016-11-07T16:24:47+00:00"><span class="inv-single-blog-before-meta">
-                            <?php echo esc_html_e('on ','invictus'); ?> </span><a href="<?php echo get_day_link( $archive_year, $archive_month, $archive_day); ?>">
-                            <?php the_date('F d, Y'); ?></a></time>
-                </div>
-
                 <div class="inv-single-blog-meta-text">
-                    <div class="inv-single-blog-author"><span class="inv-single-blog-before-meta">
-                            <?php echo esc_html_e('by ','invictus'); ?> </span>
+                    <div class="inv-single-blog-author">
                         <?php the_author_posts_link(); ?>
                     </div>
                 </div>
+                <div class="inv-single-blog-date inv-single-blog-meta-text">
+                    <time datetime="2016-11-07T16:24:47+00:00"><a href="<?php echo get_day_link( $archive_year, $archive_month, $archive_day); ?>">
+                            On <?php the_date('F d, Y'); ?></a></time>
+                </div>
+
 
             </div>
         </div>
