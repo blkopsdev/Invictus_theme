@@ -127,12 +127,7 @@ echo '</ul>';
   $share_btn = $ins_opt['ins-opt-post-share'];
   if($share_btn == '1'){ ?>
 
-            <div class="blog-post-share-wrapper">
-                <h5>
-                    <?php echo esc_html_e('Share this article','invictus');?>
-                </h5>
-                <?php insignia_socials_sharing(); ?>
-            </div>
+           
 
             <?php
   }
@@ -213,14 +208,6 @@ $nextThumbnail = get_the_post_thumbnail( $nextPost->ID, array(150,150) );
     }
 ?>
 
-
-            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 comments-write-comment-box">
-                <div id="allcomments" class="tab-pane fade in active">
-
-                    <?php comments_template(); ?>
-
-                </div>
-            </div>
 
 
 
