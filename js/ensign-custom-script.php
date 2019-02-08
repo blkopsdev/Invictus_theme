@@ -72,12 +72,12 @@ else{
 jQuery(window).scroll(function() {
         if (jQuery(window).width() >= <?php echo esc_js($break_point); ?> ) { 
 if (jQuery(this).scrollTop() > 100){  
-    jQuery('.inv-header-logo-holder').hide();
+    jQuery('.inv-main-header-wrapper').hide();
     jQuery('.header-sticky-logo').show();
   }
   
   else{
-    jQuery('.inv-header-logo-holder').show();
+    jQuery('.inv-main-header-wrapper').show();
     jQuery('.header-sticky-logo').hide();
 
   }
