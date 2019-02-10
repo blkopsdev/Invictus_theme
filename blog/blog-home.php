@@ -24,7 +24,7 @@ global $blog_load_more1, $blog_no_posts1,$css1, $blog_extra_class1, $blog_gap1;
 		$posts->the_post(); 
  ?>
 	<?php	
-			get_template_part( 'blog/archive/blog','grid-content');  
+			get_template_part( 'archive/blog','grid-content');  
 	?>
 	<?php } ?>
 	<?php endif; ?>
