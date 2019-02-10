@@ -8,6 +8,14 @@ Template Name: No Header footer
 global $ins_opt;
  ?>
 <section id="content" role="main">
+<?php
+    $args = array( 'numberposts' => '1', 'category' => CAT_ID );
+    $recent_posts = wp_get_recent_posts( $args );
+    foreach( $recent_posts as $recent ){
+    echo '<a href="' . get_permalink($recent["ID"]) . '">Latest Post</a>';
+    }
+?>
+
 
 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
