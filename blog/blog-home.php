@@ -12,7 +12,7 @@ global $ins_opt;
     $args = array( 'numberposts' => '1', 'category' => CAT_ID );
     $recent_posts = wp_get_recent_posts( $args );
     foreach( $recent_posts as $recent ){
-    echo '<a href="' . get_permalink($recent["ID"]) . '">Latest Post</a>';
+    	print_r($recent);
     }
 ?>
 
