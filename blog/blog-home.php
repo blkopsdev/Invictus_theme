@@ -50,6 +50,7 @@ $archive_day   = get_the_time('d');
             <div class="inv-single-blog-meta-row">
                 <div class="inv-single-blog-meta-text">
                     <div class="inv-single-blog-author" style="color: #aaaaaa; font-weight: bold; font-size: 14px; line-height: 28px; letter-spacing: 1px; display: inline-block; margin: 0 14px; text-transform: uppercase;">
+                        <?php echo esc_html_e('by ','invictus'); ?>
                         <?php
                             echo get_the_author_meta( 'display_name' , $recent['post_author'] );
                         ?>
