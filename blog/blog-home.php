@@ -36,7 +36,7 @@ $archive_day   = get_the_time('d');
     <div class="inv-single-blog-title-inner">
         <div class="container custom-blog-title" style="text-align: initial;">
             <div class="inv-single-blog-category-row">
-                <p class="inv-single-blog-subtitle" style="color: white; font-weight: bold; font-size: 14px; line-height: 28px; letter-spacing: 1px; display: inline-block; margin: 0 14px; text-transform: uppercase;    bottom: 15px; background: #f07d31 none repeat scroll 0 0; padding: 0px 10px;">
+                <p class="inv-single-blog-subtitle" style="color: white; font-weight: bold; font-size: 14px; line-height: 28px; letter-spacing: 1px; display: inline-block; margin: 0 14px; text-transform: uppercase; bottom: 15px; background: #f07d31 none repeat scroll 0 0; padding: 0px 20px; position: relative;">
                     Featured
                 </p>
             </div>
