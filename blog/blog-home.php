@@ -49,7 +49,7 @@ $archive_day   = get_the_time('d');
 
             <div class="inv-single-blog-meta-row text-center">
                 <div class="inv-single-blog-meta-text">
-                    <div class="inv-single-blog-author" style="color: #aaaaaa; font-weight: bold; font-size: 14px; line-height: 28px; letter-spacing: 1px; display: inline-block; margin: 0 14px; text-transform: uppercase;">
+                    <div class="inv-single-blog-author" style="color: #aaaaaa; font-weight: bold; font-size: 14px; line-height: 28px; letter-spacing: 1px; display: inline-block; margin: 0 14px; text-transform: uppercase; width: 400px; padding-top: 15px; border-top: 1.5px dotted;">
                         <?php echo esc_html_e('by ','invictus'); ?>
                         <?php
                             echo get_the_author_meta( 'display_name' , $recent['post_author'] );
