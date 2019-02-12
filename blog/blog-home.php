@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: No Header footer
+Template Name: Blog Home Tamplate
 */
 ?>
 
