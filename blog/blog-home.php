@@ -34,20 +34,20 @@ $archive_day   = get_the_time('d');
     <div class="inv-single-blog-title-bg-overlay"></div>
     <div class="inv-single-blog-under-header-wrapper" style="height: 80px;"></div>
     <div class="inv-single-blog-title-inner">
-        <div class="container custom-blog-title">
+        <div class="container custom-blog-title" style="text-align: initial;">
             <div class="inv-single-blog-category-row">
-                <div class="inv-single-blog-subtitle" style="color: #aaaaaa; font-weight: bold; font-size: 14px; line-height: 28px; letter-spacing: 1px; display: inline-block; margin: 0 14px; text-transform: uppercase;">
-                    <?php echo $category_name; ?>
-                </div>
+                <p class="inv-single-blog-subtitle" style="color: white; font-weight: bold; font-size: 14px; line-height: 28px; letter-spacing: 1px; display: inline-block; margin: 0 14px; text-transform: uppercase;    bottom: 15px; background: #f07d31 none repeat scroll 0 0; padding: 0px 10px;">
+                    Featured
+                </p>
             </div>
 
-            <div class="inv-single-blog-title-row">
+            <div class="inv-single-blog-title-row text-center">
                 <a href="<?php echo $recent['guid'] ?>"><h1 class="inv-single-blog-title">
                     <?php echo $recent['post_title']; ?>
                 </h1></a>
             </div>
 
-            <div class="inv-single-blog-meta-row">
+            <div class="inv-single-blog-meta-row text-center">
                 <div class="inv-single-blog-meta-text">
                     <div class="inv-single-blog-author" style="color: #aaaaaa; font-weight: bold; font-size: 14px; line-height: 28px; letter-spacing: 1px; display: inline-block; margin: 0 14px; text-transform: uppercase;">
                         <?php echo esc_html_e('by ','invictus'); ?>
